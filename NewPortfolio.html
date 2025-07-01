@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahil Singh - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #FFBD39;
+      margin-bottom: 20px;
+    }
+
+    .btn-custom {
+      background-color: #FFBD39;
+      border: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .btn-custom:hover {
+      background-color: #ffc107;
+      color: black;
+    }
+
+    .progress-bar {
+      background-color: #FFBD39;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .icon-wrap a {
+      color: #FFBD39;
+      margin: 0 15px;
+      font-size: 1.8rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .icon-wrap a:hover {
+      transform: scale(1.2);
+      color: #ffc107;
+    }
+
+    .navbar-nav .nav-link.active {
+      border-bottom: 2px solid #FFBD39;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Sahil</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1 class="display-4 fw-bold">I'm Sahil Singh</h1>
+    <p class="lead fst-italic">Full-Stack Web Developer</p>
+    <a href="#projects" class="btn btn-custom mt-3 px-4">View Projects</a>
+    <a href="#" class="btn btn-outline-light mt-3 px-4 ms-3" download>Download Resume</a>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container text-center py-5" data-aos="fade-up">
+    <h2 class="mb-3">About Me</h2>
+    <p class="text-muted">Passionate full-stack developer skilled in modern web technologies. I can build fast, responsive and secure websites using HTML, CSS, JavaScript, PHP and MySQL.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-5">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <p>HTML5</p>
+          <div class="progress mb-3"><div class="progress-bar" style="width: 95%">95%</div></div>
+          <p>CSS3</p>
+          <div class="progress mb-3"><div class="progress-bar" style="width: 90%">90%</div></div>
+          <p>JavaScript</p>
+          <div class="progress mb-3"><div class="progress-bar" style="width: 85%">85%</div></div>
+        </div>
+        <div class="col-md-6">
+          <p>PHP</p>
+          <div class="progress mb-3"><div class="progress-bar" style="width: 80%">80%</div></div>
+          <p>Bootstrap</p>
+          <div class="progress mb-3"><div class="progress-bar" style="width: 90%">90%</div></div>
+          <p>MySQL</p>
+          <div class="progress mb-3"><div class="progress-bar" style="width: 75%">75%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3 border-0 shadow">
+            <h5>Student Management System</h5>
+            <p class="text-muted">A PHP-MySQL based platform for managing students and marks.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 border-0 shadow">
+            <h5>Weather App</h5>
+            <p class="text-muted">Weather forecast app using OpenWeather API and JavaScript.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3 border-0 shadow">
+            <h5>Attendance Tracker</h5>
+            <p class="text-muted">Realtime student attendance tracker using Firebase.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container text-center" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <p class="text-muted">Email: sahilrajput64@gmail.com | Phone: +91-1233456789</p>
+      <div class="icon-wrap mt-3">
+        <a href="https://www.linkedin.com/in/sahil-singh-ss1707/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/nikumbh_sahil"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Sahil Singh. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Close navbar after click on small screen
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbar = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('show')) {
+          new bootstrap.Collapse(navbar).toggle();
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+</body>
+
+</html>
